@@ -7,6 +7,7 @@ ruby "2.0.0"
 gem 'pg'
 gem 'devise', '3.0.0'
 gem 'carrierwave'
+gem 'rails_12factor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
