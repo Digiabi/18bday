@@ -1,0 +1,18 @@
+
+<p>
+  First Name<%= @kid.first_name %>
+</p>
+<p>
+  Birthday
+  <%= @kid.birthday %>
+</p>
+<p> 
+  Gender :<%if @kid.gender%>
+    <%= "Boy" %>
+  <%else%>
+    <%= "Girl" %>
+  <%end%>
+</p>
+
+<%= image_tag @kid.photo.to_s ,:style=> "height :100px"%>
+<%= link_to "Back" ,kids_path%>

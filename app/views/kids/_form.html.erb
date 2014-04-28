@@ -1,0 +1,30 @@
+<%= form_for @kid, :html => {:multipart => true} do |f| %>
+
+<%= f.hidden_field :user_id , :value=> current_user.id%>
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= f.label :birthday %><br />
+    <%= f.text_field :birthday %>
+  </p>
+
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+
+  <p>
+    Photo <%= f.file_field :photo %>
+  </p>
+
+  <p>
+    <%= f.label :gender %><br />
+   Boy <%= f.radio_button :gender , true%>
+    Girl <%= f.radio_button :gender , false%>
+  </p>
+
+  <p><%= f.submit %></p>
+<% end %>
