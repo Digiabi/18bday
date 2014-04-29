@@ -16,12 +16,24 @@ class KidsController < ApplicationController
     end
   end
 
+  def edit
+
+  end
+
+  def update
+    
+  end
+
   def index
     @kids = Kid.all
   end
 
   def show
      @kid = Kid.find(params[:id])
+  end
+
+  def destroy
+
   end
 
   private

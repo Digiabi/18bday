@@ -15,5 +15,9 @@
 
 
 <p><%= image_tag @kid.photo.to_s ,:style=> "height :100px"%></p>
+<p>
+  <%#= link_to "Edit" ,kids_path, :class => "btn btn-primary"%>
+  <%#= link_to "Delete" ,kids_path, :class => "btn btn-danger"%>
+</p>
 
 <%= link_to "Back" ,kids_path, :class => "btn btn-primary"%>

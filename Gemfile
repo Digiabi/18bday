@@ -9,6 +9,7 @@ gem 'devise', '3.0.0'
 gem 'carrierwave'
 gem 'rails_12factor'
 gem 'griddler'
+gem 'sendgrid'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
