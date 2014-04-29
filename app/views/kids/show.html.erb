@@ -6,18 +6,16 @@
   Birthday: <%= @kid.birthday %>
 </p>
 <p> 
-  Gender: <%if @kid.gender%>
-    <%= "Boy" %>
-  <%else%>
-    <%= "Girl" %>
-  <%end%>
+  Gender: <%= @kid.gender%>
+    
 </p>
 
 
 <p><%= image_tag @kid.photo.to_s ,:style=> "height :100px"%></p>
 <p>
-  <%#= link_to "Edit" ,kids_path, :class => "btn btn-primary"%>
-  <%#= link_to "Delete" ,kids_path, :class => "btn btn-danger"%>
+  <%= link_to "Edit" ,edit_kid_path, :class => "btn btn-primary"%>
+   <%= link_to 'Delete', kid_path, :method => :delete, :confirm => 'Are you sure?', :class => "btn btn-danger"%>
+  <%#= link_to "Delete" ,"#", :class => "btn btn-danger"%>
 </p>
 
 <%= link_to "Back" ,kids_path, :class => "btn btn-primary"%>
