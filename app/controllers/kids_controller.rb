@@ -40,10 +40,13 @@ class KidsController < ApplicationController
 
   def show
     @kid = Kid.find(params[:id])
+    unless @kid.user == current_user
+      redirect_to root_path(current_user)
+    end
   end
 
   def destroy
-#    aaaa
+
     @kid = Kid.find(params[:id])
     @kid.destroy
     respond_to do |format|

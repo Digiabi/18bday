@@ -23,14 +23,14 @@ ActiveRecord::Schema.define(version: 20140429082648) do
   end
 
   create_table "kids", force: true do |t|
+    t.integer  "user_id"
     t.string   "first_name"
     t.date     "birthday"
     t.string   "username"
-    t.boolean  "gender"
+    t.string   "gender"
+    t.string   "photo"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "photo"
-    t.integer  "user_id"
   end
 
   create_table "messages", force: true do |t|
