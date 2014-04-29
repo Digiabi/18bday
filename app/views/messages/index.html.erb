@@ -1,0 +1,12 @@
+<h1>Messages</h1>
+
+<% if @messages.count > 0 %>
+    <% @messages.each do |message| %>
+      <blockquote>
+        <p><%= message.body %></p>
+        <small><%= message.email %></small>
+      </blockquote>
+    <% end %>
+<% else %>
+  <p><em>Oops, doesn't look like there are any messages yet.</em></p>
+<% end %>

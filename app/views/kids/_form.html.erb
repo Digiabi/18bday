@@ -3,17 +3,17 @@
 <%= f.hidden_field :user_id , :value=> current_user.id%>
   <p>
     <%= f.label :first_name %><br />
-    <%= f.text_field :first_name %>
+    <%= f.text_field :first_name , :placeholder => "First name" %>
   </p>
 
   <p>
     <%= f.label :birthday %><br />
-    <%= f.text_field :birthday %>
+    <%= f.text_field :birthday , :placeholder => "Birthday" %>
   </p>
 
   <p>
     <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.text_field :username , :placeholder => "Username" %>
   </p>
 
   <p>
